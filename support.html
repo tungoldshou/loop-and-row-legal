@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — Loop &amp; Row</title>
+  <meta name="description" content="Help and FAQ for Loop & Row crochet and knitting row counter." />
+  <style>
+    :root {
+      --bg: #FAF8F4;
+      --ink: #1A1814;
+      --muted: #6B6560;
+      --teal: #0F5F5A;
+      --rule: rgba(26, 24, 20, 0.12);
+      --card: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0E0D0C;
+        --ink: #F2EEE6;
+        --muted: #A39E96;
+        --teal: #5CB8B0;
+        --rule: rgba(242, 238, 230, 0.14);
+        --card: #1A1816;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      font-size: 16px;
+    }
+    header {
+      padding: 2.5rem 1.25rem 1rem;
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+    header p.kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin: 0 0 0.5rem;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem;
+    }
+    header .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+    main { max-width: 40rem; margin: 0 auto; padding: 0 1.25rem 3.5rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+      padding: 1.1rem 1.15rem;
+      margin: 0.85rem 0;
+    }
+    h2 { font-size: 1.05rem; margin: 0 0 0.55rem; color: var(--teal); }
+    h3 { font-size: 0.98rem; margin: 1rem 0 0.35rem; }
+    p, li { margin: 0.4rem 0; }
+    ul, ol { padding-left: 1.2rem; margin: 0.3rem 0; }
+    a { color: var(--teal); }
+    .note { font-size: 0.88rem; color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-top: 0.35rem; }
+    th, td { text-align: left; padding: 0.45rem 0.3rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+    th { color: var(--muted); }
+    footer {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 0 1.25rem 2.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="kicker">Loop &amp; Row</p>
+    <h1>Support &amp; FAQ</h1>
+    <p class="meta">v1.3.2 · Local-first crochet &amp; knit counter · Fiber Journal</p>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Contact</h2>
+      <p><a href="mailto:support@loopandrow.app">support@loopandrow.app</a> <span class="note">(placeholder — change when hosting)</span></p>
+      <p class="note">Alternates: tungoldshou@gmail.com · echozhong@mail.grokbot.com</p>
+    </div>
+
+    <div class="card">
+      <h2>Quick start</h2>
+      <ol>
+        <li>Create a project on Home (or explore the demo journal).</li>
+        <li>Open the counter; add named counters for each part.</li>
+        <li>Optional: paste pattern text, or import a PDF and use the rulers.</li>
+        <li>Use Big Tap when both hands hold yarn.</li>
+        <li>Export JSON from Settings before switching phones.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>FAQ</h2>
+
+      <h3>How does the counter work?</h3>
+      <p>Each project can have several <strong>named counters</strong>. Each tracks row/round, stitch, and an optional repeat. Tap +1 or use Big Tap. Undo steps back through recent history.</p>
+
+      <h3>Multi-counter</h3>
+      <p>Yes — label tiles like Head / Body / Sleeve and switch without losing place.</p>
+
+      <h3>PDF patterns</h3>
+      <p>Import from Files. The PDF is copied into the app (not uploaded to us). Yellow = row guide; teal = column guide. A one-time coach tip explains the rulers; re-show it in Settings.</p>
+
+      <h3>Pattern checklist &amp; stitch math</h3>
+      <p>Paste rounds to get a checklist and a deterministic stitch-count check (not AI). US/UK terms change how abbreviations are read; pasted text is never silently converted.</p>
+
+      <h3>US vs UK terms</h3>
+      <p>Settings → Crochet terminology. Default US. Custom abbreviations (consume → produce) live in the same screen.</p>
+
+      <h3>Export / backup</h3>
+      <p>Settings → Export everything creates JSON for projects &amp; settings. Photos and PDFs stay in app documents and are not inside that file. Restore replaces local data after confirmation.</p>
+
+      <h3>Voice counting</h3>
+      <table>
+        <thead><tr><th>Build</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Expo Go</td><td>Not available — use Big Tap</td></tr>
+          <tr><td>Web</td><td>Browser Speech API where supported</td></tr>
+          <tr><td>App Store native</td><td>Planned on-device speech</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Accounts, ads, subscriptions</h3>
+      <p>None in v1.3.2. A possible one-time IAP may come later. Not listed on the China App Store storefront.</p>
+
+      <h3>Something looks wrong</h3>
+      <p>Force-quit, confirm you did not restore an old backup, export JSON, and email support with device model, iOS version, app version, and steps. We cannot see your projects remotely.</p>
+    </div>
+  </main>
+  <footer>
+    Host this file at a stable HTTPS URL for App Store Connect → Support URL.<br />
+    <!-- TODO-HOST: replace after GitHub Pages / Carrd publish -->
+  </footer>
+</body>
+</html>
